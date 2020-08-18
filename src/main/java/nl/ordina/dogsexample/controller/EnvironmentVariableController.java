@@ -15,4 +15,9 @@ public class EnvironmentVariableController {
     public Map<String, String> giveEnvironmentVariables() {
         return System.getenv();
     }
+
+    @GetMapping(path = "/test")
+    public String giveTestEnvironmentVariables(){
+        return System.getenv("test_valueee");
+    }
 }
