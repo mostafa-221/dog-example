@@ -28,5 +28,5 @@ jobs:
       with:
         app-name: 'dog-example'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_61c744dac0c34097a082802eb9a666d7 }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_7f9f486e34cd424fa88d8b8066a53681 }}
         package: '${{ github.workspace }}/target/*.jar'
