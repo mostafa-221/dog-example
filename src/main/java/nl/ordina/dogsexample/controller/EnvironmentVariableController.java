@@ -11,10 +11,6 @@ import java.util.Map;
 @CrossOrigin
 @RequestMapping(path = "/EV")
 public class EnvironmentVariableController {
-    @GetMapping
-    public Map<String, String> giveEnvironmentVariables() {
-        return System.getenv();
-    }
 
     @GetMapping(path = "/test")
     public String giveTestEnvironmentVariables(){
