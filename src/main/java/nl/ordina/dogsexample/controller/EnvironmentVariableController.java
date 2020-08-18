@@ -5,15 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Map;
-
 @RestController
 @CrossOrigin
 @RequestMapping(path = "/EV")
 public class EnvironmentVariableController {
 
     @GetMapping(path = "/test")
-    public String giveTestEnvironmentVariables(){
+    public String giveTestEnvironmentVariables() {
         return System.getenv("test_valueee");
     }
 }
